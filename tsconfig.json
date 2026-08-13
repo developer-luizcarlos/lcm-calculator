@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "declarationDir": "./out",
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "module": "nodenext",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "rootDir": "./src",
+    "strict": true,
+    "target": "esnext",
+    "types": ["node"]
+  },
+  "exclude": ["./tests"]
+}

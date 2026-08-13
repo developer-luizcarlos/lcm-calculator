@@ -25,7 +25,8 @@
     "url": "git+https://github.com/developer-luizcarlos/lcm-calculator.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm tsx ./src/main.ts",
+    "test": "tsx --test"
   },
   "type": "module",
   "version": "1.0.0"
