@@ -4,5 +4,5 @@
  * @param values An array of numbers
  */
 export default function isEveryValueGreaterThanZero(values: number[]): boolean {
-  return values.every((val) => val > 0);
+    return values.every((val) => val > 0);
 }

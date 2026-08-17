@@ -4,71 +4,71 @@
  * @returns An array including all the prime divisors
  */
 export default function getPrimeDivisors(value: number): number[] {
-  if (!Number.isInteger(value)) {
-    throw new TypeError("Expect an integer number as argument");
-  }
-
-  if (value <= 0) {
-    throw new TypeError(
-      "Only non-zero and positive values are accepted as argument",
-    );
-  }
-
-  if (isPrime(value)) {
-    return [value];
-  }
-
-  const primeDivisors: number[] = [];
-
-  for (let i = 1; i <= value; i++) {
-    if (value % i !== 0) {
-      continue;
+    if (!Number.isInteger(value)) {
+        throw new TypeError("Expect an integer number as argument");
     }
 
-    if (!isPrime(i)) {
-      continue;
+    if (value <= 0) {
+        throw new TypeError(
+            "Only non-zero and positive values are accepted as argument",
+        );
     }
 
-    primeDivisors.push(i);
-  }
+    if (isPrime(value)) {
+        return [value];
+    }
 
-  return primeDivisors;
+    const primeDivisors: number[] = [];
+
+    for (let i = 1; i <= value; i++) {
+        if (value % i !== 0) {
+            continue;
+        }
+
+        if (!isPrime(i)) {
+            continue;
+        }
+
+        primeDivisors.push(i);
+    }
+
+    return primeDivisors;
 }
 
 export function getDivisors(value: number): number[] {
-  if (!Number.isInteger(value)) {
-    throw new TypeError("Expect an integer number as argument");
-  }
-
-  if (value <= 0) {
-    throw new TypeError(
-      "Only non-zero and positive values are accepted as argument",
-    );
-  }
-
-  const divisors: number[] = [];
-
-  for (let i = 1; i <= value; i++) {
-    if (value % i === 0) {
-      divisors.push(i);
+    if (!Number.isInteger(value)) {
+        throw new TypeError("Expect an integer number as argument");
     }
-  }
 
-  return divisors;
+    if (value <= 0) {
+        throw new TypeError(
+            "Only non-zero and positive values are accepted as argument",
+        );
+    }
+
+    const divisors: number[] = [];
+
+    for (let i = 1; i <= value; i++) {
+        if (value % i === 0) {
+            divisors.push(i);
+        }
+    }
+
+    return divisors;
 }
 
 export function isPrime(value: number): boolean {
-  if (value <= 0) {
-    throw new TypeError(
-      "Only non-zero and positive values are accepted as argument",
-    );
-  }
+    if (value <= 0) {
+        throw new TypeError(
+            "Only non-zero and positive values are accepted as argument",
+        );
+    }
 
-  const divisors = getDivisors(value);
+    const divisors = getDivisors(value);
 
-  const hasOnlyTwoDivisors = divisors.length === 2;
-  const isDivisibleByOneAndItself =
-    divisors.includes(1) && divisors.includes(value);
+    const hasOnlyTwoDivisors = divisors.length === 2;
+    const isDivisibleByOneAndItself =
+        divisors.includes(1) && divisors.includes(value);
 
-  return hasOnlyTwoDivisors && isDivisibleByOneAndItself;
+    return hasOnlyTwoDivisors && isDivisibleByOneAndItself;
 }

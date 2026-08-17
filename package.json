@@ -1,33 +1,33 @@
 {
-  "author": "Luiz Carlos Lima",
-  "bugs": {
-    "url": "https://github.com/developer-luizcarlos/lcm-calculator/issues"
-  },
-  "dependencies": {
-    "@types/node": "^26.2.0"
-  },
-  "description": "Calculate the LCM between any given integer numbers",
-  "devDependencies": {
-    "tsx": "^4.23.12",
-    "typescript": "^7.0.2"
-  },
-  "homepage": "https://github.com/developer-luizcarlos/lcm-calculator#readme",
-  "keywords": [
-    "lcm",
-    "typescript",
-    "library"
-  ],
-  "license": "MIT",
-  "main": "main.ts",
-  "name": "lcm-calculator",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/developer-luizcarlos/lcm-calculator.git"
-  },
-  "scripts": {
-    "start": "npm tsx ./src/main.ts",
-    "test": "tsx --test"
-  },
-  "type": "module",
-  "version": "1.0.0"
+    "author": "Luiz Carlos Lima",
+    "bugs": {
+        "url": "https://github.com/developer-luizcarlos/lcm-calculator/issues"
+    },
+    "dependencies": {
+        "@types/node": "^26.2.0"
+    },
+    "description": "Calculate the LCM between any given integer numbers",
+    "devDependencies": {
+        "tsx": "^4.23.12",
+        "typescript": "^7.0.2"
+    },
+    "homepage": "https://github.com/developer-luizcarlos/lcm-calculator#readme",
+    "keywords": [
+        "lcm",
+        "typescript",
+        "library"
+    ],
+    "license": "MIT",
+    "main": "main.ts",
+    "name": "lcm-calculator",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/developer-luizcarlos/lcm-calculator.git"
+    },
+    "scripts": {
+        "start": "npm tsx ./src/main.ts",
+        "test": "tsx --test"
+    },
+    "type": "module",
+    "version": "1.0.0"
 }
