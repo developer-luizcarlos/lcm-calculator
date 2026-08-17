@@ -1,0 +1,1 @@
+{"version":3,"file":"get-prime-divisors.d.ts","sourceRoot":"","sources":["../../src/utils/get-prime-divisors.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AACH,MAAM,CAAC,OAAO,UAAU,gBAAgB,CAAC,KAAK,EAAE,MAAM,GAAG,MAAM,EAAE,CA8BhE;AAED,wBAAgB,WAAW,CAAC,KAAK,EAAE,MAAM,GAAG,MAAM,EAAE,CAoBnD;AAED,wBAAgB,OAAO,CAAC,KAAK,EAAE,MAAM,GAAG,OAAO,CAc9C"}

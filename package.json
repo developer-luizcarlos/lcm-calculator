@@ -11,6 +11,10 @@
         "tsx": "^4.23.12",
         "typescript": "^7.0.2"
     },
+    "exports": {
+        ".": "./out/main.js",
+        "./package.json": "./package.json"
+    },
     "homepage": "https://github.com/developer-luizcarlos/lcm-calculator#readme",
     "keywords": [
         "lcm",
@@ -18,7 +22,7 @@
         "library"
     ],
     "license": "MIT",
-    "main": "main.ts",
+    "main": "./out/main.js",
     "name": "lcm-calculator",
     "repository": {
         "type": "git",
